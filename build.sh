@@ -1,1 +1,1 @@
-docker build -t docker-darkflow .
+docker build -t yolo-mqtt .
