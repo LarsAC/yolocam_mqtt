@@ -21,10 +21,10 @@ This would enable a smart home solution such as home assistant to subscribe to s
 
 I use docker. To build a container, please clone this repository, cd into the directory and run
 
-  docker build -t docker-darkflow .
+  docker build -t yolo-mqtt-server .
 
 This should build the container which you can then run like this:
 
-  docker run -v -t -e MQTT_HOST='192.168.1.2' -e MQTT_USERNAME='ha' -e MQTT_PASSWORD='secret' -e MQTT_TOPIC='home/+/motion/snapshot' docker-darkflow
+  docker run -v -t -e MQTT_HOST='192.168.1.2' -e MQTT_USERNAME='ha' -e MQTT_PASSWORD='secret' -e MQTT_TOPIC='home/+/motion/snapshot' yolo-mqtt-server
 
 The first three environment settings (host, user, password) should be self explanatory. The MQTT_TOPIC setting controls to which topic the app subscribes to. You can use wildcards to subscribe to multiple cameras. 

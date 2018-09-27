@@ -1,1 +1,1 @@
-docker build -t yolo-mqtt .
+docker build -t yolo-mqtt-server .
